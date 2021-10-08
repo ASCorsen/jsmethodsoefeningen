@@ -14,15 +14,20 @@ console.log(cookieIngredients);
 // ---- Verwachte uitkomst: [ 'Hawai', 'Margherita', 'Salami' ]
 
 const pizzas = ["Hawai", "Margherita"];
-
+console.log("Voeg een nieuw item toe aan onderstaande array "+ pizzas)
+pizzas.push("Salami")
+console.log(pizzas)
 
 
 /* Opdracht 2: */
 // Verwijder het éérste item van onderstaande array en log dit in de terminal
 // Log daarna de originele array om te kijken of deze waarde ook echt verwijderd is en de array nu korter is geworden
 // ---- Verwachte uitkomst: 'Noten' en [ 'Eieren', 'Bloem', 'Cacao', 'Chocoladestukjes', 'Bakpoeder' ]
-
+console.log("/* Opdracht 2: */")
 const brownieIngredients = ["Noten", "Eieren", "Bloem", "Cacao", "Chocoladestukjes", "Bakpoeder"];
+console.log(brownieIngredients)
+brownieIngredients.shift()
+console.log(brownieIngredients)
 
 
 /* Opdracht 3: */
@@ -30,14 +35,18 @@ const brownieIngredients = ["Noten", "Eieren", "Bloem", "Cacao", "Chocoladestukj
 // ---- Verwachte uitkomst: [ 'Piet', 'Jan', 'Henk' ]
 
 const names = ["Henk", "Jan", "Piet"];
-
+console.log("/* Opdracht 3: */")
+names.reverse()
+console.log(names)
 
 
 /* Opdracht 4: */
 // Onderstaande array bevat een lijst met plaatsnamen. Voeg de naam "Amsterdam" toe tussen Utrecht en Maastricht.
 // ---- Verwachte uitkomst: [ 'Utrecht', 'Amsterdam', 'Maastricht', 'Eindhoven' ]
-
+console.log("/* Opdracht 4: */")
 const cities = ["Utrecht", "Maastricht", "Eindhoven"];
+cities.splice(1,0,"Amsterdam")
+console.log(cities)
 
 
 

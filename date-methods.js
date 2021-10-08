@@ -3,6 +3,8 @@
 // ---- Verwachte uitkomst: 2021-04-06T14:54:34.062Z (afhankelijk van het moment)
 
 const currentDay = new Date();
+const englishDate = currentDay.toDateString()
+
 console.log(currentDay);
 
 
@@ -12,9 +14,29 @@ console.log(currentDay);
 // ---- Verwachte uitkomsten:
 // Uren: 16 (als er een vier in de klok zit op het moment van aanroepen)
 // Minuten: 36 (als het 16:36 is op het moment van aanroepen)
-
-
+console.log("/* Opdracht 1 */")
+console.log("uren: "+ currentDay.getHours())
+console.log("minuten: "+ currentDay.getMinutes())
 
 /* Opdracht 2 */
 // Format het date-object dat je bij de vorige vraag hebt gemaakt naar een leesbare datum
 // ---- Verwachte uitkomst: Tue Apr 06 2021 (afhankelijk van het moment)
+console.log("/* Opdracht 2 */")
+
+// const longOptions = {
+//     weekday: 'long',
+//     year: 'numeric',
+//     month: 'long',
+//     day: 'numeric',
+// };
+// const dutchDate = currentDay.toDateString('nl-NL', longOptions);
+//
+// const shortOptions = {
+//     weekday: 'short',
+//     month: 'long',
+//     day: 'numeric',
+// };
+// const dutchShortDate = currentDay.toDateString('nl-NL', shortOptions);
+
+console.log(currentDay.toDateString()+"  "+currentDay.toLocaleTimeString())
+
